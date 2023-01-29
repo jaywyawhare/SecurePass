@@ -1,0 +1,24 @@
+# make a password suggestion box with 4 checkbox for difficulty as very weak, weak, mediaum, strong, very strong.
+import tkinter
+import customtkinter
+from customtkinter import *
+from tkinter import ttk
+# Modes: system (default), light, dark
+customtkinter.set_appearance_mode("System")
+# Themes: blue (default), dark-blue, green
+customtkinter.set_default_color_theme("blue")
+
+app = customtkinter.CTk()  # create CTk window like you do with the Tk window
+app.geometry("400x240")
+
+
+def button_function():
+    print("button pressed")
+
+
+# Use CTkButton instead of tkinter Button
+button = customtkinter.CTkButton(   
+    master=app, text="CTkButton", command=button_function)
+button.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
+
+app.mainloop()
