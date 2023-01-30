@@ -21,4 +21,4 @@ def encode(str):
 
 
 if __name__ == '__main__':
-    encode()
+    encode(str)

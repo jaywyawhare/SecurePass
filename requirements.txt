@@ -1,3 +1,6 @@
-math
-random
+customtkinter
 strings
+tkinter
+random
+numpy
+math

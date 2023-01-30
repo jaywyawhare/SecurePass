@@ -1,4 +1,5 @@
 import numpy as np
+from src.entropy import encode
 
 
 def checkSimilarity(username, password):
@@ -23,5 +24,13 @@ def checkSimilarity(username, password):
     return 1 - matrix[size_1][size_2] / max(size_1, size_2)
 
 
+def TotalProbability(encode, checkSimilarity):
+    if (encode > checkSimilarity):
+        return (encode - checkSimilarity) * 100
+    else:
+        return (checkSimilarity - encode) * 100
+
+
 if __name__ == '__main__':
+    TotalProbability()
     checkSimilarity()

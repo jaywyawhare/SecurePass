@@ -3,7 +3,7 @@ import string
 
 
 def password_generator():
-    len_password = random.randint(1, 16)
+    len_password = random.randint(8, 16)
     password = ''.join(random.choice(string.ascii_letters +
                        string.digits + string.punctuation) for i in range(len_password))
     return password
